@@ -9,7 +9,7 @@ public class Utils {
             throw new Exception(String.format("Phone number is too %s.", number.length() < 10 ? "small" : "long"));
 
         if (!PHONE_NUMBER_PATTERN.matcher(number).matches())
-            throw new Exception("Phone number is incorrect.");
+            throw new Exception("Phone number is incorrect. Please try again.");
     }
 
     public static int sumNumber(long number) {
